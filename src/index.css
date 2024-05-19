@@ -350,7 +350,7 @@ background-color: #0f172a6d;
     position:absolute;
     align-items: end;
     justify-content: space-evenly;
-    background-color: #000000; /* Add background color as per your design */
+    background-color: #000000; 
     padding: 1rem;
     overflow: hidden;
   }
