@@ -34,18 +34,19 @@ const landingPage = () => {
                         <span><i><ImSearch /></i></span>
                     </div>
                     <div class="login">
-                        <span><i><FaUserAlt /></i></span>
-                        Log In
+                        <span><FaUserAlt /></span>
+                        <i>Log_In</i>
                     </div>
                 </nav>
                 <div class="destination__container">
                     <img class="bg__img__1" src="assets/bg-dots.png" alt="bg" />
                     <img class="bg__img__2" src="assets/bg-arrow.png" alt="bg" />
                     <div class="socials">
-                        <span><i className="tw"><FaTwitter /></i></span>
-                        <span><i className='fb'><FaFacebookSquare /></i></span>
-                        <span><i className='insta'><GrInstagram /></i></span>
-                        <span><i className='yt'><FaYoutube /></i></span>
+
+                        <span><i ><a href="https://www.facebook.com/" className='fb'><FaFacebookSquare /></a></i></span>
+                        <span><i ><a href="https://www.instagram.com/_iamgowtham._/" className='insta'><GrInstagram /></a></i></span>
+                        <span><i className="tw"><a href="https://twitter.com/" className='tw'><FaTwitter /></a></i></span>
+                        <span><i ><a href="https://www.youtube.com/" className='yt'> <FaYoutube /></a></i></span>
                     </div>
                     <div class="content">
                         <h1>EXPLORE<br />DREAM<br /><span>DESTINATION</span></h1>

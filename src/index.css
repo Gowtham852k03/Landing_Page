@@ -67,21 +67,23 @@ nav {
 }
 
 .nav__links {
+ 
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3.5rem;
   color: rgb(255, 255, 255);
   border-radius: 50px;
-  background-color: rgba(0, 0, 0, 0.224);
-
+  background-color: rgba(104, 101, 101, 0);
 }
 #home:hover,
 #destinations:hover,
 #contact:hover,
 #blog:hover {
   transform: scale(1.5);
-background-color: #0f172a6d;
+  border-radius: 4px;
+  transition: 0.5s;
+
 }
 
 .link a {
@@ -193,9 +195,18 @@ background-color: #0f172a6d;
   background-color: var(--white);
 }
 
+.socials .insta {
+ color: #5d007e;
+}
+
+.socials a:hover{
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+
 .socials span {
   font-size: 2rem;
- 
   color: var(--white);
 }
 .fb{
@@ -206,13 +217,12 @@ background-color: #0f172a6d;
 }
 
 .tw{
-  color: #1cd0da;
-}
-.insta {
-  color: #b527e8; 
+  color: rgb(3, 8, 161);
  
-  
+ 
 }
+
+
 
 
 
@@ -295,9 +305,6 @@ background-color: #0f172a6d;
 .card3:hover {
   transform: scale(1.1);
   box-shadow:80px;
-  margin-right: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .card__content .btn {
@@ -316,8 +323,31 @@ background-color: #0f172a6d;
 
 
 @media (width < 1200px) {
+ 
+  .nav__links {
+    width: 100vw;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    position:absolute;
+    align-items: end;
+    justify-content: space-evenly;
+    background-color: #000000; 
+    padding: 1rem;
+    gap: 2rem;
+    overflow: hidden;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+  }
+  
+  
   .search {
-    max-width: 235px;
+    max-width: 500px;
   }
 
   .destination__container {
@@ -326,7 +356,7 @@ background-color: #0f172a6d;
 }
 
 @media (max-width: 900px) {
- 
+  
 
   .content h1 {
     font-size: 4rem;
@@ -353,14 +383,28 @@ background-color: #0f172a6d;
     background-color: #000000; 
     padding: 1rem;
     overflow: hidden;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
   }
 }
 
 
 @media (width < 600px) {
-  .search {
-    display: none;
-  }
+.login i{
+ display: none;
+
+}
+.login{
+  background-color: transparent;
+  position: relative;
+  left: 10px;
+}
+
+
+.search {
+  width: 350px;
+  max-width: 300px;
+}
 
   .destination__container {
     padding-left: 3rem;
