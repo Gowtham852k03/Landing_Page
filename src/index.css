@@ -195,13 +195,11 @@ nav {
   background-color: var(--white);
 }
 
-.socials .insta {
- color: #5d007e;
+.socials .insta:hover {
+ color: #c009e0;
 }
-
-.socials a:hover{
-  color: #ffffff;
-  transform: scale(1.1);
+.socials a{
+  color: aliceblue;
 }
 
 
@@ -209,15 +207,15 @@ nav {
   font-size: 2rem;
   color: var(--white);
 }
-.fb{
-  color: blue;
+.fb:hover{
+  color: rgb(46, 46, 240);
 }
-.yt{
+.yt:hover{
   color: red;
 }
 
-.tw{
-  color: rgb(3, 8, 161);
+.tw:hover{
+  color: rgb(39, 46, 243);
  
  
 }
